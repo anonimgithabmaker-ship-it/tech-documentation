@@ -69,3 +69,14 @@ vetclinic/
     │           └── main.fxml                   
     └── test/                                   
         └── java/
+
+Opptions for database:
+sudo -u postgres psql
+
+CREATE DATABASE vetclinic_db;
+
+\c vetclinic_db;
+
+\i database/schema.sql
+
+\q
