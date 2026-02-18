@@ -80,3 +80,9 @@ CREATE DATABASE vetclinic_db;
 \i database/schema.sql
 
 \q
+
+Opptions for maven:
+mvn clean compile
+mvn javafx:run
+java -jar target/vetclinic-1.0-SNAPSHOT.jar
+
