@@ -29,3 +29,43 @@ VetClinic — это десктопное приложение для автом
 ```bash
 git clone https://github.com/your-username/vetclinic.git
 cd vetclinic
+
+Structure:
+vetclinic/
+├── .gitignore                  # Игнорируемые файлы (target, .idea, логи)
+├── LICENSE                     # Лицензия MIT
+├── README.md                   # Документация проекта (этот файл)
+├── pom.xml                     # Конфигурация Maven (зависимости, сборка)
+├── database/                   # SQL-скрипты для базы данных
+│   └── schema.sql              # Создание таблиц и тестовые данные
+├── screenshots/                 # Скриншоты для README
+│   ├── main-window.png
+│   ├── add-client.png
+│   └── statistics.png
+└── src/
+    ├── main/
+    │   ├── java/com/vetclinic/
+    │   │   ├── Main.java                    
+    │   │   ├── controller/                   
+    │   │   │   ├── MainController.java
+    │   │   │   └── ClientController.java
+    │   │   ├── model/                        
+    │   │   │   ├── Client.java
+    │   │   │   ├── Pet.java
+    │   │   │   └── Appointment.java
+    │   │   ├── view/                         
+    │   │   │   ├── MainView.java
+    │   │   │   ├── AddEditDialog.java
+    │   │   │   └── AboutDialog.java
+    │   │   ├── db/                            
+    │   │   │   └── DatabaseConnection.java
+    │   │   └── util/                          
+    │   │       ├── FileManager.java
+    │   │       └── Validator.java
+    │   └── resources/
+    │       ├── css/
+    │       │   └── style.css                 
+    │       └── fxml/
+    │           └── main.fxml                   
+    └── test/                                   
+        └── java/
